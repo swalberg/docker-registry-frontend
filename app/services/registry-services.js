@@ -192,7 +192,7 @@ angular.module('registry-services', ['ngResource'])
               if(v1Compatibility.author){
                 tmp.author = v1Compatibility.author;
               }
-              if(v1Compatibility.config.Labels){
+              if(v1Compatibility.config && v1Compatibility.config.Labels){
                 tmp.labels = v1Compatibility.config.Labels;
               }
               history.push(tmp);
